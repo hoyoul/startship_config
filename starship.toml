@@ -1,0 +1,24 @@
+format = """
+[┌────>](bold gray)$username$time
+[│─>](bold gray)$directory$git_branch$git_commit
+[└────>](bold gray) """
+
+[username]
+style_user = "white bold"
+style_root = "black bold"
+format = "[user:](red bold)[$user](yellow) "
+disabled = false
+show_always = true
+
+[time]
+disabled = false
+format = '⏳️[\[ $time \]]($style) '
+time_format = "%T"
+
+[directory]
+truncate_to_repo = false
+
+[git_branch]
+symbol = " "
+format = "on [$symbol$branch(:$remote_branch)]($style) "
+
