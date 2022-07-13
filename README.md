@@ -8,3 +8,4 @@
 *** module
 - module은 변수와 format 그리고 style을 기지고 있다.
 - module에서 중요한 변수는 disabled이다. disabled가 false여야만 화면에 출력된다.
+<img width="574" alt="img" src="https://user-images.githubusercontent.com/1201415/178644234-0b20d7f5-b15d-4a43-9689-48d75bafedb6.png">
