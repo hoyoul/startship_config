@@ -1,6 +1,7 @@
 format = """
-[┌──>](bold #fbceb1 ) $git_branch$aws
-[└──>](bold #fbceb1 ) $username$directory
+[┌──>](Bold #fbceb1 ) $directory 
+[ ──>](bold #fbceb1 ) $git_branch
+[└──>](bold #fbceb1 ) $aws
 $character"""
 
 [username]
