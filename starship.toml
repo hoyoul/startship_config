@@ -1,14 +1,12 @@
 format = """
-[┌────>](bold gray)$username$time
-[│─>](bold gray)$directory$git_branch$git_commit
-[└────>](bold gray) """
+[┌──>](bold #fbceb1 ) $git_branch$aws
+[└──>](bold #fbceb1 ) $username$directory
+$character"""
 
 [username]
-style_user = "white bold"
-style_root = "black bold"
-format = "[user:](red bold)[$user](yellow) "
 disabled = false
 show_always = true
+format = "[user:](#ffead8 bold)[$user](#ffead8) "
 
 [time]
 disabled = false
@@ -18,7 +16,21 @@ time_format = "%T"
 [directory]
 truncate_to_repo = false
 
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+
 [git_branch]
 symbol = " "
 format = "on [$symbol$branch(:$remote_branch)]($style) "
 
+[aws]
+format = 'on [$symbol($profile )(\($region\) )]($style)'
+style = "bold blue"
+symbol = "🅰 "
+
+[aws.region_aliases]
+ap-northeast-2 = "seoul region"
+us-east-1 = "va"
+[aws.profile_aliases]
+CompanyGroupFrobozzOnCallAccess = 'Frobozz'
