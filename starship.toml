@@ -1,9 +1,14 @@
 format = """
+[﹏﹏﹏﹏﹏﹏﹏﹏﹏ information ﹏﹏﹏﹏﹏﹏﹏﹏﹏](bold yellow)
 [┌──>](Bold #fbceb1 ) $directory 
 [ ──>](bold #fbceb1 ) $git_branch
 [└──>](bold #fbceb1 ) $aws
-$character"""
+[﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋﹋](bold yellow)
+$character
 
+"""
+
+add_newline = true
 [username]
 disabled = false
 show_always = true
